@@ -1,0 +1,22 @@
+  {
+    "name": "nitingale_lit",
+    "vendorId": "0x0121",
+    "productId": "0x0012",
+    "lighting": "none",
+    "matrix": { "rows": 5, "cols": 7},
+	"customKeycodes": [ 
+{		"name": "WkS", "title": "press W + release S", "shortName": "WkS"},
+{		"name": "AkD", "title": "press A + release D", "shortName": "AkD"},
+{		"name": "SkW", "title": "press S + release W", "shortName": "SkW"},
+{		"name": "DkA", "title": "press D + release A", "shortName": "DkA"}
+	],
+    "layouts": {
+      "keymap": [
+[		"0,0","0,1","0,2","0,3","0,4","0,5"	],
+[		{"w":1.5},"1,0","1,1","1,2","1,3","1,4","1,5"	],
+[		{"w":1.75},"2,0","2,1","2,2","2,3","2,4","2,5","2,6"	],
+[		{"w":2},"3,0","3,1",{"x":0.5},"3,3","3,4","3,5","3,6"	],
+[		{"w":1.25},"4,0",{"x":2.5},"4,3","4,4","4,5","4,6"	]
+]
+    }
+    }

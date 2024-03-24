@@ -1,0 +1,78 @@
+{
+    "keyboard_name": "nitingale_lit",
+    "manufacturer": "Tsuiha",
+    "maintainer": "Tsuiha",
+	"processor": "RP2040",
+    "bootloader": "rp2040",
+	"board": "GENERIC_RP_RP2040",
+    "features": {
+        "mousekey": true,
+    },
+	"build": {
+                "debounce_type":"sym_eager_pk",
+                "firmware_format": "uf2"
+    },
+	"debounce":5,
+
+    "matrix_pins": {
+        "direct": [
+            ["GP27", "GP1", "GP2", "GP3", "GP4", "GP5",  null],
+            ["GP28", "GP0", "GP6", "GP7", "GP8", "GP9",  null],
+            ["GP29", "GP21", "GP15", "GP14", "GP13", "GP12",  "GP10"],
+            ["GP26",  "GP24",   null, "GP16", "GP17", "GP18",  "GP11"],
+            ["GP25",  null,   null,   "GP23",  "GP22",  "GP20",  "GP19"]
+        ]
+    },
+	
+    "usb": {
+        "device_version": "0.6.1",
+        "pid": "0x0012",
+        "vid": "0x0121",
+		"polling_interval":1
+    },
+	
+	"bootmagic": {
+		"matrix": [4,2]
+	},
+	
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"label":"0", "x":0, "y":0},
+                {"label":"1", "x":1, "y":0},
+                {"label":"2", "x":2, "y":0},
+                {"label":"3", "x":3, "y":0},
+                {"label":"4", "x":4, "y":0},
+                {"label":"5", "x":5, "y":0},
+
+                {"label":"tab", "x":0, "y":1},
+                {"label":"q", "x":1, "y":1},
+                {"label":"w", "x":2, "y":1},
+                {"label":"e", "x":3, "y":1},
+                {"label":"r", "x":4, "y":1},
+                {"label":"t", "x":5, "y":1},
+
+                {"label":"caps", "x":0, "y":2},
+                {"label":"a", "x":1, "y":2},
+                {"label":"s", "x":2, "y":2},
+                {"label":"d", "x":3, "y":2},
+                {"label":"f", "x":4, "y":2},
+                {"label":"g", "x":5, "y":2},
+                {"label":"h", "x":6, "y":2},
+
+                {"label":"sft", "x":0, "y":3},
+                {"label":"z", "x":1, "y":3},
+                {"label":"x", "x":2, "y":3},
+                {"label":"c", "x":3, "y":3},
+                {"label":"v", "x":4, "y":3},
+                {"label":"b", "x":5, "y":3},
+				
+                {"label":"ctrl", "x":0, "y":4},
+                {"label":"esc", "x":1, "y":4},
+                {"label":"n", "x":2, "y":4},
+                {"label":"space", "x":3, "y":4},
+                {"label":"m", "x":4, "y":4}
+            ]
+        }
+    }
+}
